@@ -1,0 +1,27 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+OrionLib:MakeNotification({
+	Name = "Doors Plushies!",
+	Content = "Plushies!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+local Window = OrionLib:MakeWindow({Name = "Doors Plushies", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Tab = Window:MakeTab({
+	Name = "Doors Plushies",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Plushie Script's"
+})
+Tab:AddButton({
+	Name = ("Plushies"),
+	Callback = function()
+loadstring(game:HttpGt("https://raw.githubusercontent.com/JevilOhio/plushie-hub/main/Doors%20Plush%20hub"))();
+      		print("executed")
+  	end    
+})
+
+
+
+
